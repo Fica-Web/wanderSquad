@@ -13,7 +13,7 @@ const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     return (
-        <nav className="bg-primary">
+        <nav className="bg-blue-600">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
@@ -30,7 +30,7 @@ const Navbar = () => {
                                 key={option.name}
                                 to={option.link}
                                 className={({ isActive }) =>
-                                    `text-white px-3 py-2 rounded-md font-medium ${isActive ? "bg-blue-700" : "hover:bg-blue-100"
+                                    `text-white px-3 py-2 rounded-md text-sm font-medium ${isActive ? "bg-blue-700" : "hover:bg-blue-700"
                                     }`
                                 }
                             >
@@ -58,7 +58,11 @@ const Navbar = () => {
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
-                                    d={isMobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+                                    d={
+                                        isMobileMenuOpen
+                                            ? "M6 18L18 6M6 6l12 12" // Close icon
+                                            : "M4 6h16M4 12h16M4 18h16" // Hamburger icon
+                                    }
                                 />
                             </svg>
                         </button>
@@ -66,26 +70,27 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Mobile Menu */}
-            {isMobileMenuOpen && (
-                <div className="md:hidden">
-                    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                        {navOptions.map((option) => (
-                            <NavLink
-                                key={option.name}
-                                to={option.link}
-                                className={({ isActive }) =>
-                                    `text-white block px-3 py-2 rounded-md text-base font-medium ${isActive ? "bg-blue-700" : "hover:bg-blue-700"
-                                    }`
-                                }
-                                onClick={() => setIsMobileMenuOpen(false)} // Close menu on link click
-                            >
-                                {option.name}
-                            </NavLink>
-                        ))}
-                    </div>
+            {/* Mobile Menu with Transition */}
+            <div
+                className={`overflow-hidden transition-[max-height] duration-300 ease-in-out ${isMobileMenuOpen ? "max-h-96" : "max-h-0"
+                    }`}
+            >
+                <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    {navOptions.map((option) => (
+                        <NavLink
+                            key={option.name}
+                            to={option.link}
+                            className={({ isActive }) =>
+                                `text-white block px-3 py-2 rounded-md text-base font-medium ${isActive ? "bg-blue-700" : "hover:bg-blue-700"
+                                }`
+                            }
+                            onClick={() => setIsMobileMenuOpen(false)} // Close menu on link click
+                        >
+                            {option.name}
+                        </NavLink>
+                    ))}
                 </div>
-            )}
+            </div>
         </nav>
     );
 };
