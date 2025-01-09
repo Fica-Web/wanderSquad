@@ -5,6 +5,8 @@ const HomePage = () => {
     return (
         <>
             <Hero />
+            <Hero />
+            <Hero />
         </>
     )
 }
