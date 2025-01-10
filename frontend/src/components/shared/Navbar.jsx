@@ -23,13 +23,13 @@ const Navbar = () => {
                             <img
                                 src={logo}
                                 alt="Gomiles International Logo"
-                                className="h-12 object-cover"
+                                className="lg:h-12 md:h-10 h-8 object-cover"
                             />
                         </NavLink>
                     </div>
 
                     {/* Desktop Menu */}
-                    <div className="hidden md:flex space-x-6">
+                    <div className="hidden md:flex lg:space-x-6 space-x-2">
                         {navOptions.map((option) => (
                             <NavLink
                                 key={option.name}

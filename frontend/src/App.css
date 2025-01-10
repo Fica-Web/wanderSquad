@@ -41,6 +41,11 @@
   color: #888;
 } */
 
+.kaushan-script-regular {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .background-div {
   background-image: url('https://png.pngtree.com/background/20230426/original/pngtree-fashion-store-interior-of-a-men-s-clothing-store-picture-image_2490200.jpg');
@@ -52,10 +57,10 @@
 }
 
 .background-img {
-  background-image: url('https://png.pngtree.com/background/20240412/original/pngtree-3d-illustration-of-the-interior-of-a-fashion-store-picture-image_8464909.jpg');
+  /* background-image: url('https://png.pngtree.com/background/20240412/original/pngtree-3d-illustration-of-the-interior-of-a-fashion-store-picture-image_8464909.jpg'); */
   background-size: cover;  /* Ensures the image covers the whole div */
   background-position: center;  /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-attachment: fixed; /* Makes the background fixed */
-  min-height: 120vh; /* Sets minimum height to viewport height */
+  /* min-height: 120vh; Sets minimum height to viewport height */
 }
