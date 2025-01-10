@@ -2,7 +2,7 @@ import React from 'react'
 
 const SinglePackage = () => {
     return (
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden sm:min-w-[350px] transition-transform transform hover:scale-105">
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden md:min-w-[350px] transition-transform transform hover:scale-105">
             <img
                 src="https://images.pexels.com/photos/2144326/pexels-photo-2144326.jpeg?cs=srgb&dl=pexels-freestockpro-2144326.jpg&fm=jpg"
                 alt="Travel Destination Image"
