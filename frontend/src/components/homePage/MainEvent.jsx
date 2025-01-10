@@ -5,11 +5,11 @@ const MainEvent = () => {
     return (
         <div 
             style={{backgroundImage: `url(${mainEventHero})`}}
-            className='background-img text-white flex justify-end items-center lg:px-36 sm:px-16'
+            className='background-img text-white flex lg:justify-end justify-center items-center lg:px-36 md:px-16'
         >
             <div className='sm:max-w-[370px] w-full p-4'>
                 <img 
-                    src="https://websitedemos.net/clothing-store-02/wp-content/uploads/sites/1447/2024/03/bg-03-b.jpg" alt="" 
+                    src="https://images.pexels.com/photos/699466/pexels-photo-699466.jpeg" alt="" 
                     className='max-h-[70vh]'
                 />
                 <h2 className='kaushan-script-regular text-4xl text-center my-6'>

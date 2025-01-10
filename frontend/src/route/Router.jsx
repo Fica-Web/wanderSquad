@@ -6,6 +6,8 @@ import MainLayout from '../layout/MainLayout';
 const HomePage = lazy(() => import('../pages/HomePage'));
 const AboutPage = lazy(() => import('../pages/AboutPage'));
 const ContactPage = lazy(() => import('../pages/ContactPage'));
+const PackagePage = lazy(() => import('../pages/PackagePage'));
+const ServicePage = lazy(() => import('../pages/ServicePage'));
 
 const router = createBrowserRouter([
     {
@@ -24,6 +26,14 @@ const router = createBrowserRouter([
             {
                 path: '/contact',
                 element: <ContactPage />
+            },
+            {
+                path: '/packages',
+                element: <PackagePage />
+            },
+            {
+                path: '/services',
+                element: <ServicePage />
             }
         ]
     }
