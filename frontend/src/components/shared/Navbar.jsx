@@ -35,7 +35,7 @@ const Navbar = () => {
                                 key={option.name}
                                 to={option.link}
                                 className={({ isActive }) =>
-                                    `px-3 py-2 rounded-md text-sm font-medium text-white ${isActive ? "bg-blue-700 " : " hover:bg-blue-700 hover:text-white"
+                                    `px-3 py-2 rounded-md text-sm font-medium ${isActive ? "text-secondary " : "  hover:text-secondary"
                                     }`
                                 }
                             >
@@ -47,7 +47,7 @@ const Navbar = () => {
                     {/* Mobile Menu Button */}
                     <div className="md:hidden">
                         <button
-                            className="text-gray-700 hover:text-white hover:bg-blue-700 p-2 rounded-md"
+                            className=" hover:text-secondary p-2 rounded-md"
                             aria-label="Toggle mobile menu"
                             aria-expanded={isMobileMenuOpen}
                             aria-controls="mobile-menu"
@@ -88,7 +88,7 @@ const Navbar = () => {
                             key={option.name}
                             to={option.link}
                             className={({ isActive }) =>
-                                `block px-3 py-2 rounded-md text-base font-medium ${isActive ? "bg-blue-700 text-white" : "text-gray-700 hover:bg-blue-700 hover:text-white"
+                                `block px-3 py-2 rounded-md text-base font-medium ${isActive ? " text-secondary" : "text-primary hover:text-secondary"
                                 }`
                             }
                             onClick={() => setIsMobileMenuOpen(false)} // Close menu on click

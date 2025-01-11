@@ -1,5 +1,6 @@
 import React from "react";
 import hero from "../../assets/images/hero1.jpg";
+import ReusableButton from '../reusable/ReusableButton';
 
 const Hero = () => {
     return (
@@ -10,22 +11,20 @@ const Hero = () => {
             }}
         >
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div className="absolute inset-0 bg-primary bg-opacity-50"></div>
 
             {/* Content */}
             <div className="relative text-center text-white px-4">
                 <h1 className="text-4xl md:text-6xl kaushan-script-regular font-bold mb-4">
                     Welcome to WanderSquad
                 </h1>
-                <p className="text-lg md:text-xl mb-6">
+                <h3 className="text-lg md:text-xl mb-6">
                     Discover amazing packages, services, and more with just one click.
-                </p>
-                <a
-                    href="#services"
-                    className="px-6 py-3 bg-blue-600 text-white text-lg font-medium rounded-md hover:bg-blue-700 transition duration-300"
-                >
-                    Get Started
-                </a>
+                </h3>
+                <ReusableButton 
+                    content={'Discover now'}
+                    color={'border-secondary text-secondary'}
+                />
             </div>
         </div>
     );
