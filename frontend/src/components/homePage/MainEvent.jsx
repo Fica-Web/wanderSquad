@@ -1,5 +1,6 @@
 import React from 'react';
-import mainEventHero from '../../assets/images/hero-02.jpg'
+import mainEventHero from '../../assets/images/hero-02.jpg';
+import ReusableButton from '../reusable/ReusableButton';
 
 const MainEvent = () => {
     return (
@@ -16,9 +17,9 @@ const MainEvent = () => {
                     Explore our upcoming event now!
                 </h2>
                 <div className='flex justify-center'>
-                    <button className='border-2 p-3 px-7 font-semibold font-mono hover:scale-105'>
-                        VIEW COLLECTION
-                    </button>
+                    <ReusableButton
+                        content={'View collection'}
+                    />
                 </div>
             </div> 
         </div>

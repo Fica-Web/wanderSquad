@@ -1,14 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-const ReusableButton = ({ content, hanleClick }) => {
-    return (
-        <button
-            onClick={hanleClick}
-            className='bg-gray-500 text-white p-2 px-5 md:px-8 rounded-full mx-auto my-10'
-        >
-            { content }
-        </button>
-    )
-}
+const ReusableButton = ({ content, handleClick, color = 'border-white text-white' }) => {
+  return (
+    <button
+      onClick={handleClick}
+      className={`${color} border-2 p-3 px-7 md:text-lg font-semibold font-mono hover:scale-105 uppercase`}
+    >
+      {content}
+    </button>
+  );
+};
 
-export default ReusableButton
+export default ReusableButton;

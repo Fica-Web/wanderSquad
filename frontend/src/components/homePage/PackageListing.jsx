@@ -23,10 +23,11 @@ const PackageListing = () => {
                 <SinglePackage />
                 <SinglePackage />
             </div>
-            <div className='flex justify-center mb-10'>
+            <div className='flex justify-center my-10'>
                 <ReusableButton 
-                    hanleClick={handleClick}
+                    handleClick={handleClick}
                     content={'Explore More'}
+                    color={'border-secondary text-secondary'}
                 />
             </div>
         </div>

@@ -14,8 +14,8 @@ const Hero = () => {
 
             {/* Content */}
             <div className="relative text-center text-white px-4">
-                <h1 className="text-4xl md:text-6xl font-bold mb-4">
-                    Welcome to MyApp
+                <h1 className="text-4xl md:text-6xl kaushan-script-regular font-bold mb-4">
+                    Welcome to WanderSquad
                 </h1>
                 <p className="text-lg md:text-xl mb-6">
                     Discover amazing packages, services, and more with just one click.
