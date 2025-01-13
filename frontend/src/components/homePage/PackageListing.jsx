@@ -15,7 +15,7 @@ const PackageListing = () => {
             <h2 className="kaushan-script-regular text-primary text-4xl text-center my-10 md:my-20">
                 Our popular packages
             </h2>
-            <div className="flex justify-center flex-wrap gap-8 ">
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-4">
                 <SinglePackage />
                 <SinglePackage />
                 <SinglePackage />

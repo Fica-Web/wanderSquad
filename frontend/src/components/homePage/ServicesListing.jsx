@@ -4,7 +4,7 @@ import services from '../../data/services';
 
 const ServicesListing = () => {
     return (
-        <div className="min-h-[90vh] bg-white px-4">
+        <div className="min-h-[90vh] bg-white px-4 text-primary">
             <h2 className="kaushan-script-regular text-4xl text-center my-10 md:my-20">
                 Our Services
             </h2>
