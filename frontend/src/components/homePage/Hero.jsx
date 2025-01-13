@@ -10,7 +10,7 @@ const Hero = () => {
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed h-full w-full"
                 style={{
                     backgroundImage: `url(${hero})`,
-                    animation: "infiniteZoom 20s infinite",
+                    // animation: "infiniteZoom 20s infinite",
                 }}
             ></div>
 

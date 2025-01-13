@@ -1,14 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo-02.png';
-
-const navOptions = [
-    { name: "Home", link: "/" },
-    { name: "Packages", link: "/packages" },
-    { name: "Services", link: "/services" },
-    { name: "About Us", link: "/about" },
-    { name: "Contact", link: "/contact" },
-];
+import navOptions from '../../data/navOptions';
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
